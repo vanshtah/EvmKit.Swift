@@ -110,6 +110,16 @@ extension Chain {
         )
     }
 
+    public static var shardeum: Chain {
+        Chain(
+                id: 250,
+                coinType: 60,
+                syncInterval: 15,
+                gasLimit: 10_000_000,
+                isEIP1559Supported: false
+        )
+    }
+
     public static var ethereumRopsten: Chain {
         Chain(
                 id: 3,
