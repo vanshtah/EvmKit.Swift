@@ -108,4 +108,11 @@ extension TransactionSource {
         )
     }
 
+    public static func fantom(apiKey: String) -> TransactionSource {
+        TransactionSource(
+                name: "https://explorer-dapps.shardeum.org/",
+                type: .etherscan(apiBaseUrl: "https://explorer-dapps.shardeum.org/", txBaseUrl: "https://explorer-dapps.shardeum.org/", apiKey: apiKey)
+        )
+    }
+
 }
