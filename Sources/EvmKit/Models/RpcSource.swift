@@ -105,4 +105,8 @@ extension RpcSource {
         .http(urls: [URL(string: "https://rpc.fantom.network")!], auth: nil)
     }
 
+    public static func shardeumRpcHttp() -> RpcSource {
+        .http(urls: [URL(string: "https://dapps.shardeum.org/")!], auth: nil)
+    }
+
 }
