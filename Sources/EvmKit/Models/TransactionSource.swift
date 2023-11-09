@@ -110,7 +110,7 @@ extension TransactionSource {
 
     public static func shardeum(apiKey: String) -> TransactionSource {
         TransactionSource(
-                name: "https://explorer-dapps.shardeum.org/",
+                name: "ftmscan.com",
                 type: .etherscan(apiBaseUrl: "https://api.ftmscan.com", txBaseUrl: "https://ftmscan.com", apiKey: apiKey)
         )
     }
